@@ -6,7 +6,7 @@
 
 char* password ="1234"; 
 int count = 0; 
-//int relay_pin = 13 ; //pin 11 for relay + solenoid
+//int relay_pin = 13 ; //pin 13 for relay + solenoid
 const int buzzer = 12;
 const byte rows = 4; 
 const byte cols = 4;
