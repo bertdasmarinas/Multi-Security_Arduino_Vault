@@ -11,6 +11,7 @@ Components used:<br>
 • Solenoid lock<br>
 • Piezo buzzer<br>
 • 4x4 membrane keypad<br>
+• Voltage regulator<br>
 ---
 **ABSTRACT**<br>
 Vault is usually found in a bank or other financial institution, which is a safe and secure place for storing items of value.<br> Bank vaults must meet a series of safety regulations, created by the Federal Reserve Board. Vaults are usually used to store cash, as well as customers' safe deposit boxes.<br>	
