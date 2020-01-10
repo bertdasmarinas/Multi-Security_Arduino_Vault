@@ -28,8 +28,8 @@ void setup(){
   lcd.init();
   lcd.backlight();
   lcd.begin(16, 2);
-  pinMode(relay_pin , OUTPUT);
   finger.begin(57600);
+  pinMode(relay_pin , OUTPUT);
   if(finger.verifyPassword()){
     lcd.setCursor(0,0);
     lcd.print("Fingerprint");
@@ -104,7 +104,6 @@ void loop(){
   lcd.setCursor(0,0);
   lcd.print("Place finger");
   getFingerprintIDez();
-  delay(5000);  
 }
  void displayCodeEntryScreen()  //display the code on the screen
 {
@@ -171,9 +170,9 @@ void loop(){
   lcd.print(finger.fingerID);
   delay(5000);
   lcd.clear(); 
-  digitalWrite(relay_pin, LOW);
+  digitalWrite(relay_pin, HIGH);
   delay(10000);
-  digitalWrite(relay_pin , HIGH);
+  digitalWrite(relay_pin , LOW);
   delay(5000);
   return finger.fingerID; 
   delay(5000);
